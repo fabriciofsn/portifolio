@@ -1,0 +1,14 @@
+[data-lang="lang"]{
+    animation: slide .3s forwards; 
+}
+
+@keyframes slide{
+    from{
+        opacity: 0;
+        transform:translate3d(-60px, 0, 0);
+    }
+    to{
+       opacity: 1;
+       transform:translate3d(0, 0, 0);
+    }
+}

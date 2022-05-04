@@ -1,0 +1,18 @@
+@import "menu.css";
+@import "introdution.css";
+@import "menuMobile.css";
+@import "animeLang.css";
+@import "lang_transition.css";
+@import "about_me.css";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'sora', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+

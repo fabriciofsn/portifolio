@@ -1,0 +1,7 @@
+[data-lang="lang"]{
+    display: none;
+}
+
+[data-lang="lang"].active{
+    display: block;
+}

@@ -1,0 +1,104 @@
+.btn{
+    padding: .875rem;
+    display: none;
+    font-weight: bold;
+    font-family: 'sora';
+    gap: 1px;
+    position: absolute;
+    top: 19px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: .875rem;
+}
+
+span.mobile{
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-top: 2px solid white;
+}
+
+span.mobile::after{
+    content: '';
+    width: 25px;
+    height: 25px;
+    border-top: 2px solid currentColor;
+    margin-top: -15px;
+    display: block;
+    transition: .3s;
+
+}
+
+span.mobile::before{
+    content: '';
+    width: 25px;
+    height: 25px;
+    border-top: 2px solid currentColor;
+    display: block;
+    margin-top: 8px;
+    transition: .3s;
+
+}
+
+.btn.active span.mobile{
+    border-top-color: transparent;
+}
+
+.btn.active span.mobile::after{
+    border-color: white;
+    transform: rotate(-140deg);
+    position: relative;
+    top: -32px;
+    right: -7px;
+    transition: .3s;
+}
+
+.btn.active span.mobile::before{
+    border-color: white;
+    transform: rotate(140deg);
+    position: relative;
+    top: -20px;
+    right: 10px;
+    transition: .3s;
+}
+
+@media(max-width: 750px){
+    [data="btn"]{
+        display: flex;
+    }
+
+    .container{
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+
+    .links{
+        position: absolute;
+        background-color: #212529;
+        width: 100%;
+        max-width: 500px;
+        border-radius: 5px;
+        margin-left: 0;
+        height: auto;
+        padding: 2rem ;
+        z-index: 600;
+        margin-left: -550px;
+        transition: .3s;
+    }
+
+    .links.active{
+
+        margin-left: -20px;
+        transition: .3s;
+    }
+
+    .links ul li{
+        display: block;
+        margin-top: 3rem;
+        border-bottom: 1px solid #551A8B;
+    }
+}
